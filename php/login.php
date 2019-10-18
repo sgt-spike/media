@@ -1,0 +1,9 @@
+<?php
+//login.php
+$host='10.20.30.10';
+$dbase='moviesdb';
+$web_user='webuser';
+$passw='web@me';
+$admin_user='moviedb_admin';
+$admin_pw='Bac@2030';
+?>

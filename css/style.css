@@ -1,0 +1,123 @@
+
+body{
+	background: #292F33;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 100%;
+}
+
+.page {
+	display: grid;
+	grid: repeat(2,auto) / auto;
+}
+
+ #titlebar {
+	grid-row: 1/2;
+	display: grid;
+	grid: 100% / repeat(2, 1fr); 
+	padding: 0 25px;
+	background: #737373;
+}
+#title {
+	place_self: center / left;
+}
+
+#search {
+	display: grid;
+	grid: repeat(2,1fr)/auto;
+	grid-row: 1;
+	grid-column: 3/4;
+	justify-self: end;
+	align-self: center;
+}
+
+#searchform {
+	grid-row: 1;
+	margin: 0;
+	padding: 0;
+}
+
+#refresh {
+	grid-row: 2;
+	margin: 2.5px 0 0 0;
+	padding: 0 0 0 5px;
+	text-decoration: underline;
+	color: #292F33;
+	cursor: pointer;
+}
+
+#refresh:hover {
+	color: #FFFFFF;
+}
+
+form>input {
+	border-radius: 5px;
+	border: none;
+}
+
+.search-field {
+	height: 25px;
+	margin: 0 5px;
+}
+
+.btn {
+	height: 27px;
+	background-color: #3B5998;
+	color: #292F33;
+	cursor: pointer;
+}
+
+input#searchBtn:hover, input#cancelBtn:hover {
+	color: #fff;
+}
+
+
+
+#main-all, #main-select {
+	grid-row: 2/3;
+}
+
+#main-select {
+	display: none;
+}
+
+.section {
+	background: #8B9DC3;
+	margin-top: 10px;
+}
+
+#main-all .flex-container, #main-select .flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	background: #292F33;	
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+.flex-container .flex-item{
+
+	background: #8B9DC3;
+	padding: 25px;
+	width: 200px;
+	height: 75px;
+	margin-top: 50px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	border-radius: 10px;
+	display: grid;
+	grid-template: repeat(2, 1fr) / 100%;
+}
+
+#item-title {
+	font-size: 1.25em;
+	font-weight: bold;
+	align-self: center;
+}
+
+#item-media {
+	font-size: 1em;
+} 
