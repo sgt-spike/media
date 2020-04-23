@@ -1,0 +1,19 @@
+$block: ".header";
+#{$block} {
+   background-color: map-get($map: $headerBackgroundColor, $key: "dark");
+   padding: 15px 25px;
+   position: sticky;
+   top: 0;
+   &__title {
+      
+      & .aLink {
+         text-decoration: none;
+         color: map-get($map: $headerTextColor, $key: "dark");;
+      }
+   }
+   &__search {
+      justify-self: end;
+      align-self: center;
+   }
+}
+

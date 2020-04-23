@@ -4,21 +4,26 @@
 <title>Chriss Movie Library</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="css/style.css" media="screen" >
+<link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 
 <body>
-	<div class="page">
-		<div id="titlebar">
-			<div id="title">
-				<h1>The Chriss Movie Collection</h1>
+	<div class="body-grid">
+		<div class="header header--grid">
+			<div class="header__title">
+				<h1><a class="aLink" href="index.php">The Chriss Movie Collection</a></h1>
 			</div>
-			<div id="search">
-				<form class="form-inline" method="post" id="searchform">
-					<input class="search-field" type="text" name="search" placeholder="Enter A Movie" id="searchField">
-					<input class="btn btn-sm" id="searchBtn" type="submit"  value="Movie Search">
-					<input class="btn btn-sm" id="cancelBtn" type="button" value="Cancel">
-            </form>
-            <h5 id="refresh">Refresh Library</h5>
+			<div class="header__search">
+				<div class="search--grid">
+					<form class="form form-grid" method="get" id="search" action="index.php">
+								  <input class="form__input" type="text" name="search" placeholder="Search for Movies" id="searchField">
+					</form>
+					<form id="refresh">
+						<button class="btn btn--med btn--blue" type="submit" form="search">Movie Search</button>
+						<button class="btn btn--med btn--blue" type="submit" formaction="index.php" form="search">Clear Search</button>
+						<button class="btn btn--med btn--blue" type="submit" value="" formaction="refresh_db.php?refresh=" form="refresh">Refresh Library</button>
+					</form>
+				</div>
 			</div>
 		</div>
+	<main id="main" class="content--grid">

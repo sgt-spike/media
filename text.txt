@@ -1,0 +1,17 @@
+SELECT * FROM files WHERE files.title not in (SELECT movies.title AS movie_title FROM movies, movie_media WHERE movies.movie_id = movie_media.movie_id AND movie_media.media_id = 3)
+
+SELECT movies.* FROM `movies`, movie_media WHERE movies.movie_id = movie_media.movie_id AND movie_media.media_id = 3
+
+select `moviesdb`.`files`.`ID` AS `ID`,
+       `moviesdb`.`files`.`filename` AS `filename`,
+       `moviesdb`.`files`.`fileformat` AS `fileformat`,
+       `moviesdb`.`files`.`artist` AS `artist`,
+       `moviesdb`.`files`.`title` AS `title`,
+       `moviesdb`.`files`.`creation_date` AS `creation_date`,
+       `moviesdb`.`files`.`genre` AS `genre`,
+       `moviesdb`.`files`.`description` AS `description`,
+       `moviesdb`.`files`.`description_long` AS `description_long`,
+       `moviesdb`.`files`.`cover` AS `cover`,
+       `moviesdb`.`files`.`media` AS `media` from `moviesdb`.`files` 
+where !(`moviesdb`.`files`.`title` in (select `moviesdb`.`movies`.`title` AS `movie_title` 
+                                         from `moviesdb`.`movies` join `moviesdb`.`movie_media` where `moviesdb`.`movies`.`movie_id` = `moviesdb`.`movie_media`.`movie_id` and `moviesdb`.`movie_media`.`media_id` = 3))

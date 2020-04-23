@@ -1,0 +1,3 @@
+@function media-size($size) {
+   @return map-get($map: $breakpoints, $key: $size);
+}

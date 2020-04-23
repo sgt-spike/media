@@ -1,0 +1,22 @@
+.main__content {
+   grid-column: 1/-1;
+   margin: 1rem;
+}
+
+.aLink {
+   text-decoration: none;
+   color: map-get($map: $headerTextColor, $key: "dark");;
+}
+
+.movie--link {
+   display: block;
+   height: 100%;
+}
+
+.movie__cover {
+   padding: 2px;
+   img {
+      height: 1auto;
+      width: 5vw;
+   }
+}

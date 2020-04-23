@@ -1,4 +1,4 @@
-<script src="js/queryDB.js"></script>
-<script src="js/cancelQuery.js"></script>
+</main>
+</div>
 </body>
 </html>

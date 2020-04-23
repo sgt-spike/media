@@ -1,0 +1,16 @@
+$breakpoints: (
+   'small': 'min-width: 500px',
+   'medium': 'min-width: 800px',
+   'large': 'min-width: 1000px',
+   'huge': 'min-width: 1200px',
+);
+
+$headerTextColor: (
+   'dark': #ffffff,
+   'light': #262626
+);
+
+$headerBackgroundColor: (
+   'dark': #737373,
+   'light': #f2f2f2
+)

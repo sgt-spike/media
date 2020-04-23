@@ -1,0 +1,6 @@
+@mixin media-small {
+   @media screen and (media-size(small)) {
+      @content;
+   }
+}
+

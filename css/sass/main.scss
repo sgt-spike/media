@@ -1,0 +1,32 @@
+//Import Abstracts Sass Files
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+
+//Import Vendors Sass Files
+@import 'vendors/bootstrap';
+
+//Import Base Sass Files
+@import 'base/base';
+@import 'base/typography';
+
+//Import Layout Sass Files
+@import 'layout/header';
+@import 'layout/grid';
+@import 'layout/content';
+@import 'layout/navigation';
+@import 'layout/sidebar';
+@import 'layout/forms';
+@import 'layout/footer';
+
+//Import Components Sass Files
+@import 'components/media';
+@import 'components/buttons';
+
+//Import Page Sass Files
+@import 'pages/index';
+@import 'pages/contact';
+
+//Import Themes Sass Files
+@import 'themes/theme';
+@import 'themes/admin';

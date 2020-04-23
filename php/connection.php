@@ -5,7 +5,7 @@ $dbase='moviesdb';
 $web_user='webuser';
 $passw='web@me';
 $admin_user='moviedb_admin';
-$admin_pw='Bac@2030';
+$admin_pw='KW3V4yd2VUmqgBZb';
 
 $conn = mysqli_connect($host, $web_user, $passw, $dbase);
 
